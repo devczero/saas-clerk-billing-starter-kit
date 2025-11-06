@@ -1,36 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Simple steps on how to run this starter kit and test it by yourself:
 
-## Getting Started
+0) clone the repo or just download it -> unzip -> open with your IDE
 
-First, run the development server:
+1) open a terminal inside the IDE in the folder with the project and run command "npm i"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2) get Clerk and Supabase .env variables and do the Clerk -> Supabase integration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3) copy and paste the script from "supabase-sql-table-creation.txt" into the Supabase SQL Editor and click "Run" - this will create tables -> then do the same with "supabase-sql-functions-creation.txt"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4) continue in the app, after you will run command "npm run dev", on localhost -> Sign In -> go to Pricing and buy Pro plan with the Test Clerk Card -> go to Dashboard -> try to add a new record and edit / delete it then
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5) continue with AI prompts and specify that your database connection is stable and that you want to keep the current approach you are using for subscription management, and supabase database connection
